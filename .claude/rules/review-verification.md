@@ -9,7 +9,7 @@ A referee report is only as good as its grounding. One invented objection or mis
 ## Fact-check checklist (run over the drafted report before saving)
 
 1. **Location references are real.** Every "Section 4.2", "Table 3", "eq. (7)", "p. 12" points to something that exists and says what you claim. Spot-read the PDF to confirm, don't trust the brief.
-2. **"They didn't do X" is verified absence, not unchecked assumption.** Before writing "no clustered SEs", "no pre-trend test", "doesn't cite Y" — confirm it's actually missing. Search the PDF and appendix. Absence claims are the most dangerous; hold them to the highest bar.
+2. **"They didn't do X" is verified absence, not unchecked assumption.** Before writing "no clustered SEs", "no pre-trend test", "doesn't cite Y" — confirm it's actually missing. Search the **main paper AND every companion PDF** (online appendix, supplement, proofs). A separate appendix is the single most common place a "missing" robustness check, first-stage diagnostic, or proof actually lives — check it before asserting absence. Absence claims are the most dangerous; hold them to the highest bar.
 3. **No invented numbers.** Coefficients, sample sizes, p-values, and magnitudes quoted in the report must match the paper exactly.
 4. **No invented citations.** A referenced prior paper must be one you are confident exists. Web-sourced references are marked `[web]` with authors/year/venue so the editor can verify. If unsure, write "possible — verify", never a confident cite.
 5. **Quotes are verbatim.** Anything in quotation marks appears in the paper as written.

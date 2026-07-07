@@ -29,6 +29,8 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:review] Journal-calibration / paper-type / "what-would-change-my-mind" concepts were adapted from clo-author (Hugo Sant'Anna). It has no LICENSE → all-rights-reserved, so adapt ideas and re-author text; credit the source. See [[meta-governance]].
 
+[LEARN:review] A submission is a **document set**, not one file: main manuscript + separate online appendix/supplement. `/referee` gathers companions explicitly (extra paths / `--appendix`), by folder (`papers/mypaper/`), or by auto-detect (stem or appendix/online/supplement keyword, confirm first). Read the appendix in full — robustness, first-stage diagnostics, pre-trend plots, and proofs live there — and check absence claims against every document. Reviewers cite which document each finding comes from.
+
 ## Workflow Patterns
 
 [LEARN:workflow] Requirements specification (AskUserQuestion, 3-5 questions) before planning catches ambiguity early → reduces rework 30-50%. Use for complex/ambiguous tasks (>1 hour or >3 files).

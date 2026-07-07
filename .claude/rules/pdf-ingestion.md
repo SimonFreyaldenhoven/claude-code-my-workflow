@@ -6,6 +6,15 @@ How to read a manuscript PDF thoroughly and cheaply so the review is grounded in
 
 A referee reads the entire paper — introduction, model, data, results, robustness, **and the appendix** (where the identifying-assumption tests and honest caveats often hide). Do not review from the abstract and intro alone.
 
+## Separate appendix / companion PDFs
+
+A submission is frequently a **main manuscript plus one or more separate PDFs** — an online appendix, a supplement, proofs. Treat these as one document set:
+
+- **Gather them all.** Take companions from explicit arguments (`--appendix`, or extra file paths), from a per-paper folder (`papers/mypaper/`), or by auto-detecting files that share the main file's stem or contain `appendix` / `online` / `supplement` in the name (confirm before including).
+- **Read every one.** The online appendix is where pre-trend plots, robustness batteries, first-stage diagnostics, and proofs usually live — precisely the material a referee must check. Skipping it produces false "they didn't do X" objections.
+- **Cite the document by name.** Location references must disambiguate which document — e.g. "main text, Table 3" vs. "Online Appendix, Table A5", "Supplement, Sec. B.2". A bare "Table A5" is ambiguous when there are two PDFs.
+- **Absence is checked across the set.** Before asserting something is missing, search the main paper *and* every companion (see `review-verification.md`).
+
 ## Handling length
 
 1. **Size it up first.** Use `pdfinfo <file>` for the page count, or read the first page / table of contents for the section structure. Decide chunking from there.

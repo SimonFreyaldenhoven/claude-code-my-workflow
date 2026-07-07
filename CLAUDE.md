@@ -59,8 +59,10 @@ Reviewer dimensions: **Contribution** · **Identification** · **Econometric Spe
 
 ```bash
 # Referee a paper (main command)
-/referee papers/manuscript.pdf              # generic top-5 referee
-/referee papers/manuscript.pdf --journal QJE  # calibrated to a target journal
+/referee papers/manuscript.pdf                       # generic top-5 referee
+/referee papers/manuscript.pdf --journal QJE         # calibrated to a target journal
+/referee papers/manuscript.pdf papers/appendix.pdf   # main + separate appendix/supplement
+/referee papers/mypaper/                             # a folder = the whole document set
 
 # Inspect a PDF before/while reviewing
 pdfinfo papers/manuscript.pdf

@@ -33,7 +33,7 @@ These roll up into an action summary: **MUST address** (FATAL + serious ADDRESSA
 # Referee Report: [Paper Title]
 
 **Date:** YYYY-MM-DD
-**Manuscript:** [path/filename]
+**Documents:** [main manuscript; + appendix/supplement if provided]
 **Calibrated to:** [journal name / generic top-5]
 **Paper type:** [reduced-form / structural / theory+empirics / descriptive]
 **Prepared by:** /referee pipeline

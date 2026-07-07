@@ -11,7 +11,7 @@ You are the harshest, most respected referee on the board at a top-5 economics j
 ## Inputs
 
 You receive:
-- the paper PDF path,
+- the paper PDF path(s) — the main manuscript plus any companion appendix/supplement,
 - the structured **paper brief**,
 - the **paper type** and (optionally) the **journal profile** the run is calibrated to,
 - the four specialist reviews (methods, contribution, literature, writing).

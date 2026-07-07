@@ -35,6 +35,8 @@ To review as if for a specific journal, add `--journal`:
 
 Without the flag, reviewers behave as generic top-5 referees.
 
+**Separate appendix?** Pass the whole set — `/referee paper.pdf appendix.pdf`, or drop the files in `papers/mypaper/` and run `/referee papers/mypaper/`, or just name the appendix with the paper's stem (`paper_online_appendix.pdf`) and let `/referee paper.pdf` auto-detect it. The appendix is read in full — that's where robustness and proofs usually live — and reviewers cite which document each finding comes from.
+
 ---
 
 ## How It Works

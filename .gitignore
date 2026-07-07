@@ -2,8 +2,11 @@
 # .gitignore — Peer-Review (Referee) Workflow
 # ==============================================================================
 
-# Manuscripts under review are usually confidential — don't commit input PDFs.
-# (Delete these two lines if you want to track example papers in the repo.)
+# Manuscripts under review are usually confidential — don't commit input PDFs
+# (including per-paper subfolders like papers/mypaper/). Delete these lines to
+# track example papers in the repo.
+papers/**/*.pdf
+papers/**/*.PDF
 papers/*.pdf
 papers/*.PDF
 
@@ -23,6 +26,7 @@ CLAUDE.local.md
 # OS files
 .DS_Store
 Thumbs.db
+*:Zone.Identifier
 
 # IDE
 .vscode/
