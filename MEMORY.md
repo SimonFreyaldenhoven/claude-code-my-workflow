@@ -13,11 +13,13 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:review] Absence claims ("no clustered SEs", "doesn't cite X", "no pre-trend test") are the highest-risk statements — verify the absence against the full PDF *including the appendix* before asserting it.
 
-[LEARN:review] Multi-agent + adversarial beats single-pass review: 4 parallel specialists (methods, contribution, literature, writing) + a toughest-referee pass, then a synthesizer that dedupes/reconciles/ranks. The overall recommendation is the referee's judgment, not a mechanical average of dimension ratings.
+[LEARN:review] Multi-agent + adversarial beats single-pass review: 5 parallel specialists (methods, contribution, literature, writing, consistency) + a toughest-referee pass, then a synthesizer that dedupes/reconciles/ranks. The overall recommendation is the referee's judgment, not a mechanical average of dimension ratings.
 
 [LEARN:review] The paper brief is orientation for sub-agents, not authoritative. Reviewers must verify load-bearing claims against the source PDF, and the orchestrator re-verifies anything that drives a major concern or the recommendation.
 
 [LEARN:review] Journal calibration is opt-in: `--journal [X]` tunes reviewers to a target journal's bar via `.claude/references/journal-profiles.md`; with no flag, reviewers default to generic top-5. Don't force a journal choice on the common case.
+
+[LEARN:review] Journal-profile "Focus" must reflect the journal's *actual breadth* (most top/field journals publish widely), and emphases must be framed as what's **valued/rewarded**, not **required/expected**. Over-narrow profiles or false requirements make the reviewer manufacture demands the journal wouldn't. Concretely: welfare/cost-benefit is NOT required at AEJ:Policy or Econometrica; JLE covers labor broadly (human capital, search, personnel, family). When unsure of a journal's scope, defer to the expert rather than inferring.
 
 [LEARN:review] Reviews are paper-type aware (reduced-form / structural / theory+empirics / descriptive). The methods reviewer applies type-specific dimensions + sanity checks — don't demand parallel trends from a structural paper or an exclusion restriction from a descriptive one.
 
@@ -25,11 +27,13 @@ When a mistake is corrected, append a `[LEARN:category]` entry below.
 
 [LEARN:review] Classify major concerns FATAL / ADDRESSABLE / TASTE and roll up into MUST / SHOULD / MAY-push-back. Keep our judgment-based recommendation — do NOT adopt mechanical weighted 0–100 scoring.
 
-[LEARN:review] Default table-format convention is **no significance stars** (SEs in parentheses; exact p-values/CIs for key results). The writing reviewer flags stars unless a journal profile explicitly permits them.
+[LEARN:review] Default table-format convention is **no significance stars** (SEs in parentheses; exact p-values/CIs for key results) — this is a **general modern top-journal norm, NOT an AEA-specific rule**. Recent Econometrica / QE / REStud papers omit stars too; don't infer a journal's table style from its publisher. The writing reviewer flags stars unless a journal profile explicitly permits them.
 
 [LEARN:review] Journal-calibration / paper-type / "what-would-change-my-mind" concepts were adapted from clo-author (Hugo Sant'Anna). It has no LICENSE → all-rights-reserved, so adapt ideas and re-author text; credit the source. See [[meta-governance]].
 
 [LEARN:review] A submission is a **document set**, not one file: main manuscript + separate online appendix/supplement. `/referee` gathers companions explicitly (extra paths / `--appendix`), by folder (`papers/mypaper/`), or by auto-detect (stem or appendix/online/supplement keyword, confirm first). Read the appendix in full — robustness, first-stage diagnostics, pre-trend plots, and proofs live there — and check absence claims against every document. Reviewers cite which document each finding comes from.
+
+[LEARN:review] Internal numeric consistency is its own reviewer lens (`consistency-reviewer`): cross-check that the same quantity — and any repeated stated fact (sample period, N, definitions, data source) — agrees across tables/figures/text/appendix, that the prose never contradicts itself (e.g., intro "sample starts 2018" vs. data section "2019"), and that stated formulas/aggregates/derived statistics reconcile (light re-derivation, read-only). Findings feed concerns + a dedicated **Consistency Check** report section — NOT a 6th rating dimension (mirrors the adversarial pass, which also scores no dimension). Boundary: consistency = the paper agrees with itself; writing-reviewer = each exhibit is interpretable + abstract prose matches results; Phase-5 fact-check = our report quotes the paper correctly. Every mismatch cites BOTH locations with BOTH values, verified against both.
 
 ## Workflow Patterns
 

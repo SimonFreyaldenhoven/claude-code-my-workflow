@@ -18,9 +18,11 @@ Resolution:
 
 ## Table-format convention
 
-**Default:**  **no significance stars.**
-Report standard errors in parentheses; give exact p-values or confidence intervals for key
-results. The writing-reviewer should flag stars in an AEA submission as a formatting problem.
+**Default (all journals): no significance stars.** This reflects the modern top-journal
+norm, not any single publisher's house rule — report standard errors in parentheses and
+give exact p-values or confidence intervals for key results. The writing-reviewer flags
+significance stars as a formatting problem unless a specific profile below explicitly
+permits them.
 
 ---
 
@@ -32,19 +34,18 @@ results. The writing-reviewer should flag stars in an AEA submission as a format
 - **Domain lens:** would a non-specialist care? Position against the *general* frontier, not just the subfield. Insight suffices; policy is welcome, not required.
 - **Methods lens:** identification convincing to non-specialists; clean and transparent beats technically elaborate; robustness thorough but not padded.
 - **Typical concerns:** "Why should economists outside this field care?" "Is the contribution big enough?" "Is this too narrow?"
-- **Table format:** AEA (no stars).
 
 ### Econometrica (ECMA)
 - **Focus:** theory and empirical work with formal rigor.
 - **Bar:** methodological innovation, or empirics with near-airtight identification and formal results.
-- **Domain lens:** theory valued highly; formal welfare analysis expected; less policy narrative, more mechanism.
+- **Domain lens:** theory valued highly; formal results expected, with welfare/normative analysis *where the question calls for it*; less policy narrative, more mechanism.
 - **Methods lens:** formal/near-formal arguments for key results; asymptotics discussed; novel estimators need theoretical justification and finite-sample (Monte Carlo) evidence.
 - **Typical concerns:** "Where is the formal result?" "What are the asymptotic properties?" "Methods or applied contribution?"
 
 ### Journal of Political Economy (JPE)
 - **Focus:** all fields; strong emphasis on economic mechanisms and structural thinking.
 - **Bar:** deep economic insight — *why*, not just *that*.
-- **Domain lens:** mechanism is king; reduced-form alone rarely enough; a theoretical framework (even informal) is valued.
+- **Domain lens:** mechanism and economic insight are prized; a conceptual framework (even informal) strengthens the case; strong reduced-form work is welcome when the economics is deep.
 - **Methods lens:** strong identification plus mechanism evidence; heterogeneity that illuminates the mechanism; some identification imperfection tolerated if the economics is deep.
 - **Typical concerns:** "What is the mechanism?" "Can you decompose the effect?" "What does this teach us about behavior?"
 
@@ -59,7 +60,7 @@ results. The writing-reviewer should flag stars in an AEA submission as a format
 - **Focus:** all fields; technically excellent empirical and theoretical work.
 - **Bar:** top-tier technical quality; completeness over storytelling.
 - **Domain lens:** address every plausible objection; careful, complete literature treatment.
-- **Methods lens:** every specification justified; full robustness battery; sensitivity analysis (e.g., Oster 2019; Rambachan & Roth 2023); careful inference and multiple-testing corrections.
+- **Methods lens:** every specification justified; thorough robustness; sensitivity analysis (e.g., Oster 2019; Rambachan & Roth 2023); careful inference and multiple-testing corrections.
 - **Typical concerns:** "Have you checked robustness to X?" "What about specification Y?" "Inference needs more care."
 
 ---
@@ -67,41 +68,39 @@ results. The writing-reviewer should flag stars in an AEA submission as a format
 ## Top field journals
 
 ### AEJ: Applied Economics
-- **Focus:** empirical micro — labor, health, education, development, public.
+- **Focus:** empirical microeconomics across fields — labor, health, education, development, public, environmental, urban, and related.
 - **Bar:** clean applied-micro paper, credible identification, clear results; slightly below top-5 in ambition, same rigor.
 - **Methods lens:** top-5 identification standards; modern estimators for staggered DiD (no naïve TWFE); replication package expected.
 - **Typical concerns:** "Is this incremental vs. [closely related paper]?" "Better suited to a field journal?"
-- **Table format:** AEA (no stars).
 
 ### AEJ: Economic Policy
-- **Focus:** policy evaluation and design.
-- **Bar:** direct policy relevance; identification from actual policy variation preferred.
-- **Domain lens:** policy implications front and center; welfare/cost-benefit expected; institutional detail documented; generalizability across contexts.
-- **Methods lens:** clean pre-trends; policy-relevant heterogeneity; back-of-envelope welfare.
-- **Typical concerns:** "What should policymakers do with this?" "Does it generalize?" "What is the cost-benefit?"
-- **Table format:** AEA (no stars).
+- **Focus:** economics with a policy dimension, across fields (public, labor, health, education, environmental, urban, development, IO) — broader than formal program evaluation.
+- **Bar:** a policy-relevant question with credible identification; the policy angle may be direct evaluation *or* economic analysis that informs policy.
+- **Domain lens:** policy relevance is central, but welfare/cost-benefit is valued *where the question calls for it* — not a publication requirement; institutional detail and generalizability strengthen the paper.
+- **Methods lens:** credible identification (clean pre-trends where DiD is used); policy-relevant heterogeneity; back-of-envelope welfare where it fits.
+- **Typical concerns:** "What does this imply for policy?" "Does it generalize?" "Is the identification credible?"
 
 ### Journal of Human Resources (JHR)
-- **Focus:** labor, education, health, demography.
+- **Focus:** applied microeconomics of human capital and well-being — labor, education, health, and demography — with policy relevance.
 - **Bar:** strong empirical contribution, clear policy relevance, careful identification.
 - **Domain lens:** external validity and representativeness; policy-relevant heterogeneity (by race/gender/income); institutional knowledge.
-- **Methods lens:** clean identification non-negotiable; modern staggered-DiD estimators; clean pre-trends shown; replication package at acceptance.
+- **Methods lens:** careful identification is central; modern staggered-DiD estimators; clean pre-trends shown; replication package at acceptance.
 - **Typical concerns:** "What is the policy implication?" "Does this generalize beyond your sample?" "Heterogeneity by subgroup?"
 
 ### Journal of Public Economics (JPubE)
-- **Focus:** taxation, public goods, redistribution, government programs.
-- **Bar:** public-finance question, clean identification, command of tax/transfer mechanics.
-- **Methods lens:** bunching at kinks/notches; RDD at eligibility thresholds; DiD around reforms; extensive vs. intensive margins.
+- **Focus:** the role of government in the economy — taxation, public goods, redistribution, social insurance, government programs, and the public-economics side of environmental, political-economy, and behavioral questions.
+- **Bar:** a public-economics question, clean identification, command of the relevant institutional mechanics.
+- **Methods lens:** credible identification for the question; typical designs include bunching at kinks/notches, RDD at eligibility thresholds, and DiD around reforms — no single design is required; attend to extensive vs. intensive margins.
 - **Typical concerns:** "What is the elasticity?" "Extensive or intensive margin?" "Welfare implications of the reform?"
 
 ### Journal of Labor Economics (JLE)
-- **Focus:** wages, employment, human capital, discrimination, immigration.
-- **Bar:** clean labor economics, careful identification, institutional understanding.
-- **Methods lens:** selection correction where relevant (Heckman, Lee bounds); wage-gap decompositions; event studies around job/policy transitions.
+- **Focus:** labor economics broadly, including labor-adjacent topics — labor supply/demand, human capital and education, wage determination, discrimination, migration, search/matching, and personnel/family economics.
+- **Bar:** a genuine labor-economics contribution with careful identification and institutional understanding; topic breadth is not a barrier.
+- **Methods lens:** identification appropriate to the question; selection addressed where relevant (e.g., Heckman, Lee bounds); decompositions and event studies where they fit — no single required method.
 - **Typical concerns:** "Supply or demand effect?" "Selection into employment?" "General-equilibrium effects?"
 
 ### Journal of Development Economics (JDE)
-- **Focus:** poverty, institutions, agriculture, trade in developing countries.
+- **Focus:** development economics broadly — poverty, health, education, finance, firms and agriculture, labor, institutions, political economy, conflict, and trade — in low- and middle-income settings.
 - **Bar:** credible evidence (RCT or strong quasi-experiment) plus field knowledge of the setting.
 - **Domain lens:** context matters enormously; external validity to other settings; cost-effectiveness; sustainability; equity dimensions.
 - **Methods lens:** RCTs — randomization/attrition/compliance/spillovers, pre-analysis plan, power; quasi-experiments — strong first stage, clean RD/parallel trends; clustering at the right level.
@@ -119,11 +118,11 @@ results. The writing-reviewer should flag stars in an AEA submission as a format
 - **Typical concerns:** "Asymptotic properties?" "How does it compare to [existing method]?" "Finite-sample behavior?" "Are the regularity conditions plausible?"
 
 ### Review of Economics and Statistics (RESTAT)
-- **Focus:** empirical economics with emphasis on careful measurement and methods.
+- **Focus:** broad empirical economics — applied micro and macro — with high econometric standards.
 - **Bar:** technically excellent empirics; highest econometric standards short of Econometrica.
-- **Domain lens:** measurement quality paramount; novel data/measurement valued; replication studies welcome.
+- **Domain lens:** credible identification and careful inference; novel data valued; replication studies welcome.
 - **Methods lens:** every assumption tested or bounded; sensitivity analysis; careful standard errors; pre-registration viewed favorably.
-- **Typical concerns:** "Is the measurement precise enough?" "Have you tested every assumption?" "Measurement error in [variable]?"
+- **Typical concerns:** "Is the identification airtight?" "Have you tested (or bounded) every key assumption?" "Is the inference careful enough?"
 
 ---
 
@@ -134,7 +133,6 @@ results. The writing-reviewer should flag stars in an AEA submission as a format
 - **Bar:** one clean, compelling result; brevity is a feature.
 - **Methods lens:** core identification must be clean; fewer robustness checks acceptable, but the main result must be robust; visual evidence valued.
 - **Typical concerns:** "Can this be told in ~10 pages?" "Is the single result compelling enough?"
-- **Table format:** AEA (no stars).
 
 ### Economics Letters
 - **Focus:** short papers across all fields.
