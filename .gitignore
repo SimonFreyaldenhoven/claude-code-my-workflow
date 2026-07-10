@@ -13,6 +13,10 @@ papers/*.PDF
 # Referee pipeline scratch space (paper briefs, intermediates)
 referee_reports/.work/
 
+# Generated referee reports are the product (and often confidential) — don't
+# commit them. README.md stays tracked as folder documentation.
+referee_reports/referee_report_*.md
+
 # Python
 __pycache__/
 *.pyc
