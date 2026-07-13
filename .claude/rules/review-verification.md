@@ -15,6 +15,7 @@ A referee report is only as good as its grounding. One invented objection or mis
 5. **Quotes are verbatim.** Anything in quotation marks appears in the paper as written.
 6. **Severity matches evidence.** A concern is only "major/fatal" if the grounding supports it. Downgrade objections whose evidence is thin to "possible concern — worth checking".
 7. **Internal-consistency mismatches are two-sided.** A "figures/tables/text disagree" claim must quote **both** values with **both** document locations and be verified by re-reading **both** — the highest-risk class of claim (an absence claim, doubled). Drop it if either side can't be confirmed.
+8. **Proof gaps and errors are pinpointed and calibrated.** A "step X is wrong / the proof has a gap" claim quotes the **exact step and location**, and distinguishes a **demonstrated ERROR** (shown by a counterexample, or a step that plainly does not follow) from a **suspected GAP** (an under-justified step the authors should fill). Default to GAP when uncertain; never assert a proof is wrong with false confidence. "The paper does not prove X" / "assumption Y is missing" is an absence claim — confirm it against the main paper **and every companion PDF** (proofs live in appendices) before keeping it. Treat this as the highest-risk class: an absence claim about a formal argument.
 
 ## What to do with unverifiable claims
 

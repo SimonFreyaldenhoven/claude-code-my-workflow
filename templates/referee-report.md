@@ -3,7 +3,7 @@
 **Date:** [YYYY-MM-DD]
 **Documents:** [main manuscript; + appendix/supplement if provided]
 **Calibrated to:** [journal name / generic top-5]
-**Paper type:** [reduced-form / structural / theory+empirics / descriptive]
+**Paper type:** [reduced-form / structural / theory+empirics / descriptive / theory]
 **Prepared by:** /referee pipeline
 
 ---
@@ -37,7 +37,7 @@ main strengths, and the decisive concerns that drive the recommendation.]
 *(Most severe first. FATAL items lead.)*
 
 ### MC1: [title] — [FATAL / ADDRESSABLE / TASTE]
-- **Dimension:** [Contribution / Identification / Econometric Specification / Literature / Writing / Internal Consistency]
+- **Dimension:** [Contribution / Identification / Econometric Specification / Theoretical Rigor / Proofs / Literature / Writing / Internal Consistency]
 - **Issue:** [what is wrong and why it threatens the conclusions]
 - **Evidence:** [exact location — section / table / eq. / page]
 - **What would change my mind:** [the specific test, evidence, or revision that resolves it]
@@ -67,6 +67,16 @@ main strengths, and the decisive concerns that drive the recommendation.]
 
 ---
 
+## Formal Results Check
+
+*Correctness/completeness audit of the paper's formal results (proof-reviewer). Included only when the paper contains theorems/propositions/lemmas. Carries the Theoretical Rigor / Proofs rating; a confirmed error/serious gap also appears under Major/Minor Concerns.*
+
+- **Formal results:** [inventory — Thm/Prop/Lemma # + where proved] *(or "none; no formal results — not applicable")*
+- **Verified:** [the results whose proofs check out]
+- **Issues:** [each finding — result: exact step/location → ERROR (demonstrated) vs. GAP (unjustified step) → what resolves it] *(or "none; proofs check out on the results reviewed")*
+
+---
+
 ## Referee Objections
 
 *The hardest questions the authors must be able to answer.*
@@ -92,8 +102,10 @@ main strengths, and the decisive concerns that drive the recommendation.]
 | Contribution / Importance | [N] |
 | Identification | [N] |
 | Econometric Specification | [N] |
+| Theoretical Rigor / Proofs | [N / N/A] |
 | Literature & Positioning | [N] |
 | Writing & Presentation | [N] |
 | **Overall** | **[N]** |
 
-*Overall is the referee's judgment informed by — not a mechanical average of — the dimensions. A FATAL concern caps Overall regardless of polish elsewhere. Calibrated to the target journal's bar when one is given.*
+*Overall is the referee's judgment informed by — not a mechanical average of — the dimensions. A FATAL concern caps Overall regardless of polish elsewhere (a demonstrated proof error in a load-bearing result is such a FATAL). Calibrated to the target journal's bar when one is given.*
+*Theoretical Rigor / Proofs is rated only when the paper has formal results — otherwise **N/A**. For a pure-theory paper, Identification and Econometric Specification are **N/A**. Do not average N/A rows into Overall.*

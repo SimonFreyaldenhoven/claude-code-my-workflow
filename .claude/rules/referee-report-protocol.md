@@ -35,7 +35,7 @@ These roll up into an action summary: **MUST address** (FATAL + serious ADDRESSA
 **Date:** YYYY-MM-DD
 **Documents:** [main manuscript; + appendix/supplement if provided]
 **Calibrated to:** [journal name / generic top-5]
-**Paper type:** [reduced-form / structural / theory+empirics / descriptive]
+**Paper type:** [reduced-form / structural / theory+empirics / descriptive / theory]
 **Prepared by:** /referee pipeline
 
 ## Summary Assessment
@@ -54,7 +54,7 @@ main strengths, and the decisive concerns that drive the recommendation.]
 
 ## Major Concerns
 ### MC1: [title]  — [FATAL / ADDRESSABLE / TASTE]
-- **Dimension:** Contribution / Identification / Econometric Specification / Literature / Writing / Internal Consistency
+- **Dimension:** Contribution / Identification / Econometric Specification / Theoretical Rigor / Proofs / Literature / Writing / Internal Consistency
 - **Issue:** [what and why it threatens the conclusions]
 - **Evidence:** [exact location]
 - **What would change my mind:** [the specific test, evidence, or revision that resolves it]
@@ -70,6 +70,12 @@ main strengths, and the decisive concerns that drive the recommendation.]
 An audit of the paper's internal numeric agreement (from the consistency-reviewer). No dimension rating; a confirmed mismatch also appears as a concern above, tagged to the dimension it threatens.
 - **Verified:** [one line — the reconciliations cross-checked and found consistent]
 - **Issues:** [each mismatch: quantity — doc/loc A = X vs. doc/loc B = Y — which value is likely correct] — or "none; internally consistent on the quantities checked"
+
+## Formal Results Check
+An audit of the correctness and completeness of the paper's formal results (from the proof-reviewer). **Included only when the paper contains theorems/propositions/lemmas/formal derivations.** Unlike the consistency audit it *does* carry a rating (Theoretical Rigor / Proofs, below); a confirmed error or serious gap also appears as a concern above, tagged to that dimension.
+- **Formal results:** [inventory — each theorem/proposition/lemma/corollary + where proved] — or "none; no formal results — not applicable"
+- **Verified:** [the results whose proofs check out]
+- **Issues:** [each finding: result — exact step/location — ERROR (demonstrated flaw) vs. GAP (unjustified step) — what would resolve it] — or "none; proofs check out on the results reviewed"
 
 ## Referee Objections
 The hardest questions the authors must be able to answer:
@@ -88,6 +94,7 @@ The hardest questions the authors must be able to answer:
 | Contribution / Importance | N |
 | Identification | N |
 | Econometric Specification | N |
+| Theoretical Rigor / Proofs | N / N/A |
 | Literature & Positioning | N |
 | Writing & Presentation | N |
 | **Overall** | **N** |
@@ -101,4 +108,6 @@ The hardest questions the authors must be able to answer:
 - **2** — Serious problems that must be fixed before the claim holds.
 - **1** — The dimension undermines the paper.
 
-The **Overall** rating and the recommendation are the referee's judgment informed by the dimensions — **not** a mechanical average. A single FATAL concern caps Overall regardless of how polished the rest is. Ratings and dimensions are calibrated to the target journal's bar when one is given.
+The **Overall** rating and the recommendation are the referee's judgment informed by the dimensions — **not** a mechanical average. A single FATAL concern caps Overall regardless of how polished the rest is — and a **demonstrated proof error** in a load-bearing result is such a FATAL. Ratings and dimensions are calibrated to the target journal's bar when one is given.
+
+**N/A conventions.** **Theoretical Rigor / Proofs** is rated only when the paper contains formal results — otherwise it is **N/A**. For a **pure-theory** paper the empirical rows (Identification, Econometric Specification) are **N/A**, and Theoretical Rigor carries the methodological weight together with Contribution. Do not average N/A rows into Overall.

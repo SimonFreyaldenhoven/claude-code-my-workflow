@@ -37,7 +37,7 @@ You receive the **paper PDF path(s)** — the main manuscript plus any companion
 
 ```
 ## Contribution Review
-**Calibrated to:** [journal / generic top-5]   **Paper type:** [reduced-form / structural / theory+empirics / descriptive]
+**Calibrated to:** [journal / generic top-5]   **Paper type:** [reduced-form / structural / theory+empirics / descriptive / theory]
 
 ### Strengths
 - [strength] (location)
