@@ -2,7 +2,7 @@
 
 > Drop a paper PDF in, get a top-journal-quality referee report out.
 
-**Last Updated:** 2026-07-07
+**Last Updated:** 2026-07-13
 
 A focused Claude Code setup for refereeing economics manuscripts. You supply a paper; Claude reads it end-to-end, runs a panel of specialist reviewers in parallel, adds an adversarial "toughest referee" pass, synthesizes everything into one structured report, and fact-checks every claim against the actual text before handing it back. Like a conscientious referee who does the whole job — and cites their sources.
 
@@ -45,7 +45,7 @@ Without the flag, reviewers behave as generic top-5 referees.
 PDF in papers/
    │
    1. INGEST       read the whole paper (+ appendix); classify paper type; write a "paper brief"
-   2. REVIEW       5 specialist reviewers run in parallel (calibrated to --journal if given)
+   2. REVIEW       5 specialist reviewers run in parallel + a proof reviewer when the paper has formal results (calibrated to --journal if given)
    3. ADVERSARIAL  a toughest-referee pass hunts for reject-worthy objections (FATAL/ADDRESSABLE/TASTE)
    4. SYNTHESIZE   dedupe, reconcile, rank, rate, MUST/SHOULD/MAY, recommend → one report
    5. FACT-CHECK   verify every location reference and claim against the paper
@@ -54,7 +54,7 @@ PDF in papers/
 
 ### The reviewer panel
 
-Six focused agents, each better at its narrow job than a generalist:
+Seven focused agents, each better at its narrow job than a generalist:
 
 | Agent | Lens |
 |-------|------|
@@ -63,6 +63,7 @@ Six focused agents, each better at its narrow job than a generalist:
 | **literature-reviewer** | Citation completeness and honest positioning (may use the web; web claims are flagged `[web]`) |
 | **writing-reviewer** | Clarity, notation, structure, self-contained tables/figures |
 | **consistency-reviewer** | Internal consistency — the same quantity, and repeated stated facts (sample period, N, definitions), agree across tables, figures, text, and appendix (+ light re-derivation) |
+| **proof-reviewer** | Correctness of formal results — proofs, stated-vs-hidden assumptions, correct use of invoked theorems, claim↔proof match (runs only when the paper has theorems/propositions/lemmas) |
 | **adversarial-referee** | The reasons-to-reject pass — fatal objections and what the specialists missed |
 
 ### Grounded, not generated
@@ -79,11 +80,11 @@ Structured-critique format (`templates/referee-report.md`):
 - **Major Concerns** (most severe first; each tagged FATAL / ADDRESSABLE / TASTE, with **"what would change my mind"** — the specific evidence that resolves it)
 - **Minor Concerns**
 - **Referee Objections** — the hardest questions the authors must answer
-- **Ratings** — 1–5 across five dimensions, calibrated to the target journal's bar
+- **Ratings** — 1–5 across the review dimensions (a Theoretical Rigor / Proofs row appears when the paper has formal results; rows that don't apply, e.g. empirical rows for a pure-theory paper, are marked N/A), calibrated to the target journal's bar
 
 ### Calibration & paper type
 
-Reviews are **paper-type aware** — a structural paper is judged on parameter identification and model fit, not parallel trends; a descriptive paper on construct validity, not exclusion restrictions. When you pass `--journal [X]`, the panel calibrates to that journal's bar and conventions (including AEA no-stars table formatting) via `.claude/references/journal-profiles.md`.
+Reviews are **paper-type aware** — a structural paper is judged on parameter identification and model fit, not parallel trends; a descriptive paper on construct validity, not exclusion restrictions; a pure-theory paper on the correctness of its proofs, with the empirical rating rows marked N/A. When you pass `--journal [X]`, the panel calibrates to that journal's bar and conventions (including AEA no-stars table formatting) via `.claude/references/journal-profiles.md`.
 
 ---
 
@@ -95,7 +96,7 @@ referee_reports/         # OUTPUT — generated reports
 .claude/
   skills/referee/        # the pipeline orchestrator (/referee)
   skills/{lit-review,commit,context-status,learn}/
-  agents/                # the 6 reviewer agents
+  agents/                # the 7 reviewer agents
   rules/                 # referee-report-protocol, review-verification (anti-fabrication),
                          # pdf-ingestion, orchestrator-protocol, quality-gates, plan-first,
                          # session-logging, meta-governance

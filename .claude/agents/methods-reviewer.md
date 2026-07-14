@@ -26,7 +26,9 @@ You are given the **paper PDF path(s)** — the main manuscript plus any compani
 
 **Structural** — environment and functional forms motivated economically (not just "tractable"); equilibrium concept and key friction stated; **which moments identify which parameters** (data variation vs. functional-form assumptions); estimation method appropriate (MLE/GMM/SMM), convergence/multiple starts, correct SEs, overID test; model fit on non-targeted moments; counterfactuals within data support, Lucas critique, welfare metric justified.
 
-**Theory + empirics** — predictions *derived*, not assumed; predictions are sharp (rule things out; distinguish from competing theories); each prediction mapped to a test with power to reject; honest about where the model fails; standard causal-inference quality for the tests themselves.
+**Theory + empirics** — predictions *derived*, not assumed; predictions are sharp (rule things out; distinguish from competing theories); each prediction mapped to a test with power to reject; honest about where the model fails; standard causal-inference quality for the tests themselves. *(The correctness of the derivations/proofs behind the predictions is the **proof-reviewer**'s job — you check the prediction→test mapping and the quality of the empirics.)*
+
+**Theory (pure)** — no empirical component to identify or estimate; **defer the correctness of the formal results to the proof-reviewer**. Confine your review to any numerical illustration, simulation, or calibration that is present (is the computation set up correctly, are the chosen parameters sensible?). If the paper is entirely analytical, your identification/estimation dimensions are largely N/A — say so briefly rather than manufacturing empirical concerns.
 
 **Descriptive / measurement** — construct defined and the measure maps to it; measurement error discussed; construction steps documented and sensitivity to choices shown; validation (internal consistency, external benchmarks, comparison to existing measures); no causal language without a design.
 
@@ -49,7 +51,7 @@ Run the checks for the paper type; if any fails, it dominates your rating regard
 
 ```
 ## Methods Review
-**Calibrated to:** [journal / generic top-5]   **Paper type:** [reduced-form / structural / theory+empirics / descriptive]
+**Calibrated to:** [journal / generic top-5]   **Paper type:** [reduced-form / structural / theory+empirics / descriptive / theory]
 
 ### Strengths
 - [strength] (location)

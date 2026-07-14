@@ -25,16 +25,16 @@
 
 ```
 PDF in papers/  →  1. INGEST      read end-to-end; classify paper type; write a paper brief
-                   2. REVIEW      5 specialists in parallel (calibrated to --journal if given)
+                   2. REVIEW      5 specialists in parallel + proof-reviewer if formal results (calibrated to --journal)
                    3. ADVERSARIAL toughest-referee pass (FATAL / ADDRESSABLE / TASTE)
                    4. SYNTHESIZE  one report: dedupe, rank, rate, MUST/SHOULD/MAY, recommend
                    5. FACT-CHECK  verify every claim against the paper
                    6. DELIVER     save to referee_reports/
 ```
 
-Reviewer dimensions: **Contribution** · **Identification** · **Econometric Specification** · **Literature & Positioning** · **Writing & Presentation**. Each rated 1–5; overall recommendation is the referee's judgment, not a mechanical average.
+Reviewer dimensions: **Contribution** · **Identification** · **Econometric Specification** · **Theoretical Rigor / Proofs** (when the paper has formal results) · **Literature & Positioning** · **Writing & Presentation**. Each rated 1–5 (theory/proof rows are N/A when they don't apply); overall recommendation is the referee's judgment, not a mechanical average.
 
-- **Paper-type aware** — reviews adapt to reduced-form / structural / theory+empirics / descriptive (no parallel-trends demand of a structural paper).
+- **Paper-type aware** — reviews adapt to reduced-form / structural / theory+empirics / descriptive / theory (no parallel-trends demand of a structural paper; empirical rating rows are N/A for a pure-theory paper).
 - **Optional journal calibration** — `--journal [X]` tunes the review to a journal's bar via `.claude/references/journal-profiles.md`; omitted → generic top-5.
 - **"What would change my mind"** — every major concern names the specific evidence that would resolve it.
 
@@ -89,6 +89,7 @@ pdfinfo papers/manuscript.pdf
 | `literature-reviewer` | Citation completeness & positioning (may use web, flagged) |
 | `writing-reviewer` | Clarity, notation, self-contained exhibits |
 | `consistency-reviewer` | Internal consistency — numbers and repeated stated facts agree across tables/figures/text/appendix |
+| `proof-reviewer` | Correctness of formal results — proofs, stated-vs-hidden assumptions, claim↔proof match (runs only when the paper has theorems/propositions/lemmas) |
 | `adversarial-referee` | Reasons to reject; what the specialists missed |
 
 ---

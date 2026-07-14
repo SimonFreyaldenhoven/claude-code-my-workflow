@@ -43,7 +43,7 @@ You are **not** re-judging whether the econometrics is correct or a magnitude is
 
 ```
 ## Consistency Review
-**Calibrated to:** [journal / generic top-5]   **Paper type:** [reduced-form / structural / theory+empirics / descriptive]
+**Calibrated to:** [journal / generic top-5]   **Paper type:** [reduced-form / structural / theory+empirics / descriptive / theory]
 
 ### Consistency Check (audit)
 - Verified: [one line on what was cross-checked and found consistent — e.g. "headline dropout effect agrees across abstract, §5.1, Table 2, and Fig. 3; sample sizes consistent across Tables 1–3; decomposition shares sum to 100%"]

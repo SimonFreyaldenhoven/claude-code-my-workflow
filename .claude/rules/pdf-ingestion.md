@@ -28,7 +28,8 @@ After reading, write a faithful structured brief to `referee_reports/.work/<name
 - Title, authors, venue/date if shown
 - Abstract (as written)
 - Research question and claimed contribution
-- **Paper type** — classify as reduced-form / structural / theory+empirics / descriptive-measurement. This selects which dimensions and sanity checks the methods reviewer applies (don't demand parallel trends from a structural paper, or an exclusion restriction from a descriptive one).
+- **Paper type** — classify as reduced-form / structural / theory+empirics / descriptive-measurement / **theory** (pure theory, no empirics). This selects which dimensions and sanity checks the methods reviewer applies (don't demand parallel trends from a structural paper, or an exclusion restriction from a descriptive one) and which rating rows apply (a pure-theory paper's Identification / Econometric Specification rows are N/A).
+- **Formal-results flag + inventory** — whether the document set contains theorems / propositions / lemmas / corollaries / non-trivial formal derivations, and a short inventory (each result's statement + where it is proved). This gates the conditional **proof-reviewer**, *independent of paper type* — a reduced-form paper with a formal proposition triggers it too.
 - Data, sample, and time period
 - Research design / estimator; identifying assumptions **as the authors state them**
 - Headline results **with the actual numbers**

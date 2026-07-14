@@ -10,7 +10,7 @@ A referee report ships only when it would be useful to a real editor. There is n
 | 2 | **Specific** — every concern names a section/table/eq/page; no vague "the paper is weak" | An editor must be able to act on it |
 | 3 | **Actionable** — every concern carries a suggestion or the analysis that would resolve it | Referees help, not just judge |
 | 4 | **Calibrated** — majors genuinely threaten the conclusions; minors are separated out; FATAL vs. ADDRESSABLE distinguished | Not everything is equally important |
-| 5 | **Complete** — all five dimensions covered (contribution, identification, specification, literature, writing) and the adversarial and consistency passes ran | No blind spots |
+| 5 | **Complete** — all five core dimensions covered (contribution, identification, specification, literature, writing), the adversarial and consistency passes ran, and the **proof/formal-results pass ran when the paper contains formal results** | No blind spots |
 | 6 | **Fair** — genuine strengths acknowledged; tone constructive | Balanced reports carry more weight |
 | 7 | **Coherent** — reviewer overlaps deduped, disagreements adjudicated, one clear recommendation with justification | It reads as one referee, not five |
 

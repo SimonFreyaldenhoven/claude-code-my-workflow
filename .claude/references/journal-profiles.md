@@ -39,7 +39,7 @@ permits them.
 - **Focus:** theory and empirical work with formal rigor.
 - **Bar:** methodological innovation, or empirics with near-airtight identification and formal results.
 - **Domain lens:** theory valued highly; formal results expected, with welfare/normative analysis *where the question calls for it*; less policy narrative, more mechanism.
-- **Methods lens:** formal/near-formal arguments for key results; asymptotics discussed; novel estimators need theoretical justification and finite-sample (Monte Carlo) evidence.
+- **Methods lens:** formal/near-formal arguments for key results; asymptotics discussed; novel estimators need theoretical justification and finite-sample (Monte Carlo) evidence. Weight the **Theoretical Rigor / Proofs** dimension heavily — proofs are expected to be complete and self-contained, with regularity conditions stated and discussed (the proof-reviewer runs here whenever the paper states formal results).
 - **Typical concerns:** "Where is the formal result?" "What are the asymptotic properties?" "Methods or applied contribution?"
 
 ### Journal of Political Economy (JPE)
